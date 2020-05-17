@@ -1,11 +1,11 @@
-APP_NAME="Laravel Template"
+APP_NAME="GPP"
 APP_ENV=local
 APP_KEY=base64:CMO+MzmDxVJavIXigl9oUEcMrPkoLfDO3XhTxlH++zQ=
 APP_DEBUG=true
 APP_LOG=single
 APP_LOG_LEVEL=debug
-APP_URL=http://dominio.com.mx
-APP_SERVER=true
+APP_URL=http://gpp.test
+APP_SERVER=false
 GRECAPTCHA_PUBLIC="6Le0kasUAAAAAKAunZlEJPlF6x1TuvJgE-1cIiDa"
 GRECAPTCHA_SECRET="6Le0kasUAAAAAFR0dieLxkkbnNK6EhL5ZoQGiiVD"
 APP_SEND_MAIL=true
@@ -18,9 +18,9 @@ APP_FALLBACK_LOCALE=en
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=template_db
+DB_DATABASE=gpp_db
 DB_USERNAME=root
-DB_PASSWORD=
+DB_PASSWORD=Rak2020_1
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
@@ -36,7 +36,7 @@ MAIL_DRIVER=smtp
 MAIL_HOST=smtp.gmail.com
 MAIL_PORT=465
 MAIL_USERNAME="iramirez@fabricadesoluciones.com"
-MAIL_PASSWORD="put_pass_here"
+MAIL_PASSWORD="put_pass_here*"
 MAIL_ENCRYPTION=ssl
 
 MAIL_FROM_ADDRESS="iramirez@fabricadesoluciones.com"
