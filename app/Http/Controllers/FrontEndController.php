@@ -34,8 +34,22 @@ class FrontEndController extends Controller
      */
     public function index(){
     	$active = 'index';
-
     	return view('index', compact($this->compact));
+    }
+
+    public function aboutus(){
+        $active = 'aboutus';
+        return view('aboutus', compact($this->compact));
+    }
+
+    public function services(){
+        $active = 'services';
+        return view('services', compact($this->compact));
+    }
+
+    public function galery(){
+        $active = 'galery';
+        return view('galery', compact($this->compact));
     }
 
     public function getContact(){
