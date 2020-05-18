@@ -20,9 +20,7 @@ class FrontEndController extends Controller
 {
     public function __construct()
     {
-
         $this->compact = ['active'];
-
         //Catalogs
         $this->catalog_country_id = DB::table('countries')->pluck('name', 'id');
         $this->catalog_state_id = DB::table('states')->pluck('name', 'id');
