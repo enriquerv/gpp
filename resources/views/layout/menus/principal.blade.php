@@ -1,6 +1,8 @@
-<section class="row">
-  <div class="col-12">
-    <img src="{{ env('APP_URL') }}/assets/images/index/navbar1.png" width="100%">
+<section>
+  <div class="row">
+    <div class="col-12">
+      <img src="{{ env('APP_URL') }}/assets/images/index/navbar1.png" width="100%">
+    </div>
   </div>
 </section>
 
@@ -41,6 +43,10 @@
   }
   .nav-item{
     color: #24437a !important;
-    font-size: 21px;
+    font-size: 25px;
+  }
+  .no-padding{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 </style>
