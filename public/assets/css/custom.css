@@ -14,6 +14,7 @@ GENERAL
 .has-error .form-control { border-color: #dc3545; }
 .has-error .help-block { color: #dc3545; }
 .has-success .form-control, .has-success button.dropdown-toggle { border-color: #28a745; }
+.pointer{ cursor: pointer; }
 /*=============================================================================
 THANKS PAGE
 =============================================================================*/

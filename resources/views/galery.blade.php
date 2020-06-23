@@ -8,11 +8,63 @@
 @endsection
 
 @section('content')
-  <section class="container-custom pt-60 pb-60">
-  	<div class="row">
-  		<div class="col-md-12"><h1>{{ trans('home.title') }}</h1></div>
-  	</div>
-  </section>
+
+	<!-- BANNER -->
+	<div>
+		<img src="{{ env('APP_URL') }}/assets/images/titulo_galeria_gpp.png" width="100%">
+	</div>
+
+
+	<section >
+		<div class="row mt-5 mb-5">
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+			<div class="col-md-4 text-center mt-3 pt-4 pb-4">
+				<img src="https://via.placeholder.com/350x350" width="50%">
+			</div>
+		</div>
+	</section>
+
 @endsection
 
 @section('scripts')

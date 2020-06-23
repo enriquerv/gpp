@@ -18,9 +18,21 @@
       <a class="nav-item nav-link text-center {{ $active == 'aboutus' ? 'bolder' : '' }}" href="{{ URL::route('aboutus') }}">
         Nosotros
       </a>
-      <a class="nav-item nav-link text-center {{ $active == 'services' ? 'bolder' : '' }}" href="{{ URL::route('services') }}">
-        Servicios
-      </a>
+        
+      <div class="btn-group nav-item nav-link text-center pointer">
+        <span>Servicios</span>
+        <span class="dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <span class="sr-only">Toggle Dropdown</span>
+        </span>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Productos #1</a>
+          <a class="dropdown-item" href="#">Productos #2</a>
+          <a class="dropdown-item" href="#">Productos #3</a>
+        </div>
+      </div>
+
+
+
       <a class="nav-item nav-link text-center {{ $active == 'galery' ? 'bolder' : '' }}" href="{{ URL::route('galery') }}">
         Galería
       </a>

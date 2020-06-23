@@ -6,46 +6,59 @@
 @endsection
 
 @section('content')
-    <div class="row">
-        <div class="col-md-12">
-            <h1>{{ trans($active.'.title') }}</h1>
-        </div>
+
+    <!-- BANNER -->
+    <div>
+        <img src="{{ env('APP_URL') }}/assets/images/titulo_contacto_gpp.png" width="100%">
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            {!! Form::open(['route' => 'contact', 'method' => 'post', 'id' => 'formValidation', 'class' => 'form-horizontal']) !!}
-                <div class="form-group {{ $errors->first('name') ? 'has-error' : '' }}">
-                    <div class="col-md-12">
-                              {!! Form::text('name', old('name'), ['id' => 'name', 'class' => 'form-control', 'placeholder' => trans('validation.attributes.name')]) !!}
-                        <span class="help-block">{{ $errors->first('name', ':message') }}</span>
+
+    <section class="mt-5 white">
+        <div class="row">
+            <div class="col-md-6 pt-5 pl-5 pb-5 pr-5">
+                <form action="#" class="container">
+                    <div class="form-group">
+                        <label for="Nombre">Nombre</label>
+                        <input type="email" class="form-control" id="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">E-mail</label>
+                        <input type="text" class="form-control" id="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Telefono">Teléfono</label>
+                        <input type="text" class="form-control" id="Telefono">
+                    </div>  
+                    <div class="form-group">
+                        <label for="Mensaje">Mensaje</label>
+                        <textarea class="form-control" id="Mensaje" rows="5"></textarea>
+                    </div>  
+                    <div class="form-group text-center">
+                        <button class="btn btn-primary pl-5 pr-5">Enviar</button>
+                    </div>              
+                    
+                </form>
+            </div>
+            <div class="col-md-6 pt-5 pl-5 pb-5 pr-5">
+                <div class="row">
+                    <div class="col-4 text-center">
+                        <img src="https://via.placeholder.com/350x350" width="50%">
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="https://via.placeholder.com/350x350" width="50%">
+                    </div>
+                    <div class="col-4 text-center">
+                        <img src="https://via.placeholder.com/350x350" width="50%">
+                    </div>
+                    <div class="col-md-12 mt-5 text-center" style="font-size: 20px">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        <br><br>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci voluptatem ea cum ullam veritatis doloribus tempora totam, nemo aliquam, nam porro, dolores, voluptas quidem. Tempore facere saepe officiis officia labore!
                     </div>
                 </div>
-                <div class="form-group {{ $errors->first('email') ? 'has-error' : '' }}">
-                    <div class="col-md-12">
-                        {!! Form::text('email', old('email'), ['id' => 'email', 'class' => 'form-control', 'placeholder' => trans('validation.attributes.email')]) !!}
-                        <span class="help-block">{{ $errors->first('email', ':message') }}</span>
-                    </div>
-                </div>
-                <div class="form-group {{ $errors->first('phone') ? 'has-error' : '' }}">
-                    <div class="col-md-12">
-                        {!! Form::text('phone', old('phone'), ['id' => 'phone', 'class' => 'form-control', 'placeholder' => trans('validation.attributes.phone')]) !!}
-                        <span class="help-block">{{ $errors->first('phone', ':message') }}</span>
-                    </div>
-                </div>
-                <div class="form-group {{ $errors->first('message') ? 'has-error' : '' }}">
-                    <div class="col-md-12">
-                        {!! Form::textarea('message', old('message'), ['id' => 'message', 'class' => 'form-control', 'placeholder' => trans('validation.attributes.message')]) !!}
-                        <span class="help-block">{{ $errors->first('message', ':message') }}</span>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-12 text-right">
-                        {!! Form::submit(trans($active.'.send'), ['class' => 'btn btn-secondary']) !!}
-                    </div>
-                </div>
-            {!! Form::close() !!}
+            </div>
         </div>
-    </div>
+    </section>
+
 @endsection
 
 @section('scripts')
